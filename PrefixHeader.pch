@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  Glasses
+//
+//  Created by 秀才 on 16/12/14.
+//  Copyright © 2016年 lxc. All rights reserved.
+//
+
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also neKKHeader.hed to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+
+
+#endif
+
+#define HHHHEIGHT [UIScreen mainScreen].bounds.size.height
+#define HHHWIDTH [UIScreen mainScreen].bounds.size.width
+#define HHHFRAME(a,b,c,d) CGRectMake(a, b, c, d)
+#define HHHFONT(a)  [UIFont systemFontOfSize:(a)]
+

@@ -14,6 +14,7 @@
 		CE0723D81F984C38005D833D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0723D71F984C38005D833D /* Assets.xcassets */; };
 		CE0723DB1F984C38005D833D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0723D91F984C38005D833D /* LaunchScreen.storyboard */; };
 		CE0723DE1F984C38005D833D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0723DD1F984C38005D833D /* main.m */; };
+		CE0D6B631F9898800025BB0E /* CustomLoginMoudle.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0D6B621F9898800025BB0E /* CustomLoginMoudle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,10 @@
 		CE0723DA1F984C38005D833D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0723DC1F984C38005D833D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0723DD1F984C38005D833D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE0D6B601F987D450025BB0E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
+		CE0D6B611F98987F0025BB0E /* CustomLoginMoudle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLoginMoudle.h; sourceTree = "<group>"; };
+		CE0D6B621F9898800025BB0E /* CustomLoginMoudle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLoginMoudle.m; sourceTree = "<group>"; };
+		CE0D6B641F9898920025BB0E /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 		CE0723C21F984C38005D833D = {
 			isa = PBXGroup;
 			children = (
+				CE0D6B641F9898920025BB0E /* yw_1222.jpg */,
 				CE0723CD1F984C38005D833D /* AliyunDemo */,
 				CE0723CC1F984C38005D833D /* Products */,
 				54B7C66217AC076D0F1BB7D0 /* Pods */,
@@ -78,11 +84,14 @@
 				CE0723CF1F984C38005D833D /* AppDelegate.m */,
 				CE0723D11F984C38005D833D /* ViewController.h */,
 				CE0723D21F984C38005D833D /* ViewController.m */,
+				CE0D6B611F98987F0025BB0E /* CustomLoginMoudle.h */,
+				CE0D6B621F9898800025BB0E /* CustomLoginMoudle.m */,
 				CE0723D41F984C38005D833D /* Main.storyboard */,
 				CE0723D71F984C38005D833D /* Assets.xcassets */,
 				CE0723D91F984C38005D833D /* LaunchScreen.storyboard */,
 				CE0723DC1F984C38005D833D /* Info.plist */,
 				CE0723DD1F984C38005D833D /* main.m */,
+				CE0D6B601F987D450025BB0E /* PrefixHeader.pch */,
 			);
 			path = AliyunDemo;
 			sourceTree = "<group>";
@@ -251,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0D6B631F9898800025BB0E /* CustomLoginMoudle.m in Sources */,
 				CE0723D31F984C38005D833D /* ViewController.m in Sources */,
 				CE0723DE1F984C38005D833D /* main.m in Sources */,
 				CE0723D01F984C38005D833D /* AppDelegate.m in Sources */,
@@ -391,6 +401,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3BHCEXZ9M9;
 				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = AliyunDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -408,6 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3BHCEXZ9M9;
 				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = AliyunDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

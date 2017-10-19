@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import <AlinkSDK/AlinkOpenSDK.h>
+#import "CustomLoginMoudle.h"
 @interface AppDelegate ()
 
 @end
@@ -17,8 +18,34 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+#warning  请先配置好 Bundle ID 和 安全图片(yw_1222.jpg)!!!
+
+    //设置AlinkSDK环境，指定appKey
+    AlinkEnvConfig *envConfig = [AlinkEnvConfig sharedInstance];
+    envConfig.appKey = @"24658640";
+    
+    //打开日志模块，Release版本请记得关闭
+//    [envConfig openDebugLog:YES];
+    
+    //安装自定义登录协议，默认实现是OpenAccount，自定义登录协议请参照实现
+    //CustomLoginMoudle 实现请参见Demo相关文件
+    CustomLoginMoudle *loginModule = [[CustomLoginMoudle alloc] init];
+    [[AlinkAccount sharedInstance] installCustomLoginModule:loginModule];
+    
+    //Alink 初始化以及配置下行消息监听
+    [[AlinkSDK sharedManager] asyncInit:^(NSError * _Nullable error) {
+        if (!error) {
+            [kAlinkSDK setDownStreamCallback:^(NSDictionary * _Nonnull dict) {
+                //收到 DownStream 下行消息
+            }];
+            return;
+        }
+    }];
+    
     return YES;
 }
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
