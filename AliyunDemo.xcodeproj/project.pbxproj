@@ -34,7 +34,7 @@
 		CE0D6B601F987D450025BB0E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
 		CE0D6B611F98987F0025BB0E /* CustomLoginMoudle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLoginMoudle.h; sourceTree = "<group>"; };
 		CE0D6B621F9898800025BB0E /* CustomLoginMoudle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLoginMoudle.m; sourceTree = "<group>"; };
-		CE0D6B641F9898920025BB0E /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
+		CEDCA9491F999C8C00D2AC27 /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 		CE0723C21F984C38005D833D = {
 			isa = PBXGroup;
 			children = (
-				CE0D6B641F9898920025BB0E /* yw_1222.jpg */,
+				CEDCA9491F999C8C00D2AC27 /* yw_1222.jpg */,
 				CE0723CD1F984C38005D833D /* AliyunDemo */,
 				CE0723CC1F984C38005D833D /* Products */,
 				54B7C66217AC076D0F1BB7D0 /* Pods */,
@@ -405,7 +405,7 @@
 				INFOPLIST_FILE = AliyunDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bdk.aodaliyafit.AliyunDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bdk.ailiyundemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -423,7 +423,7 @@
 				INFOPLIST_FILE = AliyunDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bdk.aodaliyafit.AliyunDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bdk.ailiyundemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
